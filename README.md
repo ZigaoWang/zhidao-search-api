@@ -12,7 +12,7 @@ A Node.js API service for image search using Tavily API to provide images and su
 3. Create a `.env` file in the root directory with:
    ```
    TAVILY_API_KEY=your_tavily_api_key
-   PORT=3000
+   PORT=3001
    ```
 
 ## Usage
@@ -29,7 +29,7 @@ Production mode:
 npm start
 ```
 
-The server will run on `http://localhost:3000` by default.
+The server will run on `http://localhost:3001` by default.
 
 ### API Endpoints
 
@@ -65,7 +65,7 @@ Example response:
 ## Example Usage with cURL
 
 ```bash
-curl -X POST http://localhost:3000/api/search \
+curl -X POST http://localhost:3001/api/search \
   -H "Content-Type: application/json" \
   -d '{"query": "AI hallucination"}'
 ``` 
