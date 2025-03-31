@@ -15,12 +15,13 @@ const client = tavily({ apiKey });
  */
 async function searchWithImages(query) {
   try {
+    console.log('Searching for query:', query);
     const results = await client.search(query, {
       includeImages: true,
       includeImageDescriptions: true,
-      searchDepth: 'advanced'
+      searchDepth: 'basic'
     });
-    
+    console.log('Search results:', results);
     return results;
   } catch (error) {
     console.error('Error searching with Tavily:', error);
